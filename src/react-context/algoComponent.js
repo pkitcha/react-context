@@ -36,6 +36,7 @@ function AlgoComponent() {
         for(let i =0; i < 1; i++)
         {
             orderAction.updateAlgo({
+				id: i
                 side : "BUY"  ,
                 orderId: "5"  ,
                 orderStatus: "FILLED",

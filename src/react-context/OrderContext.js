@@ -25,7 +25,7 @@ function OrderContextProvider({ children }){
     function updateAlgo(order){
 
         var cnt = count;
-        var index = algo.findIndex(x => x.correlationId === "0e5d1b9e-f94e-45fe-a7ce-2c6779448e48");
+        var index = algo.findIndex(x => x.id === order.id);
         if(index > -1)
         {       
             algo[index].side = order.side;  
